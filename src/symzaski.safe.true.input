@@ -1,0 +1,35 @@
+Init:f1=0,f2=0,x=0
+Proc:1
+a:w(f1)(1)
+A:assume(f2>=3)
+b:w(f1)(3)
+B:assume(f2==1)
+C:assume(~(f2==1))
+c:w(f1)(2)
+D:assume(~(f2==4))
+d:w(f1)(4)
+E:assume(f2>=2)
+e:w(x)(0)
+f:r(x)(l11)
+F:assume((f2>=2) && (f2<=3))
+g:w(f1)(0)
+AMap:
+f:(l11==0)
+Regex:(aAb(BcD|C)dEefFg)+
+Proc:2
+p:w(f2)(1)
+P:assume(f1>=3)
+q:w(f2)(3)
+Q:assume(f1==1)
+R:assume(~(f1==1))
+r:w(f2)(2)
+S:assume(~(f1==4))
+s:w(f2)(4)
+T:assume(f1>=2)
+t:w(x)(1)
+u:r(x)(l22)
+U:assume((f1>=2) && (f1<=3))
+v:w(f2)(0)
+AMap:
+u:(l22==1)
+Regex:(pPq(QrS|R)sTtuUv)+

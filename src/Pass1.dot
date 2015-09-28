@@ -1,0 +1,36 @@
+digraph G {
+0[label="(not (= ph3p 1)),false,1234apqbAPtgu", color=green,shape=octagon];
+1[label="(not (= res 1)),false,1234apqbAPtg", color=green,shape=octagon];
+2[label="true,false,1234apqbAPt", color=green,shape=octagon];
+3[label="(or (= f1 0) (= turn 1)),false,1234apqbA", color=cyan,shape=rectangle];
+4[label="(= f1 0),false,1234apqbA", color=green,shape=octagon];
+5[label="(and (= f1 0) (or (= f2 0) (= turn 0))),false,1234apqb", color=yellow,shape=rectangle];
+6[label="(or (= f2 0) (= turn 0)),false,1234apqb", color=cyan,shape=rectangle];
+7[label="(= turn 0),false,1234apqb", color=green,shape=octagon];
+8[label="false,false,1234apq", color=green,shape=doubleoctagon];
+9[label="(= f2 0),false,1234apqb", color=green,shape=octagon];
+10[label="false,false,1234a", color=green,shape=doubleoctagon];
+11[label="(= f1 0),false,1234apqb", color=green,shape=octagon];
+12[label="false,false,1234", color=green,shape=doubleoctagon];
+13[label="(= turn 1),false,1234apqbA", color=green,shape=octagon];
+14[label="(and (= turn 1) (or (= f2 0) (= turn 0))),false,1234apqb", color=yellow,shape=rectangle];
+15[label="(= turn 1),true,1234apqb", color=green,shape=octagon];
+16[label="true,true,1234apq", color=green,shape=doubleoctagon];
+0->1 [label="u0"];
+1->2 [label="g0"];
+2->3 [label="P0"];
+3->4 [label="00"];
+3->13 [label="00"];
+4->5 [label="A0"];
+5->6 [label="00"];
+5->11 [label="00"];
+6->7 [label="00"];
+6->9 [label="00"];
+7->8 [label="b0"];
+9->10 [label="p0"];
+11->12 [label="a0"];
+13->14 [label="A0"];
+14->6 [label="00"];
+14->15 [label="00"];
+15->16 [label="b0"];
+}
